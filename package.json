@@ -1,0 +1,17 @@
+{
+  "name": "teste_B2W",
+  "version": "1.0.0",
+  "title": "Teste B2W",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vbrosso/challenge-code-sx.git"
+  },
+  "author": "Victor Brosso",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-htmlmin": "^2.3.0",
+    "grunt-contrib-uglify": "^2.2.0"
+  }
+}
