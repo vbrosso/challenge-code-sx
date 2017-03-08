@@ -7,13 +7,16 @@
 		<title>B2W FrontEnd Test</title>
 
 		<link rel="stylesheet" href="stylesheets/css/general.css" media="all">
+
+		<script src="js/angular.min.js"></script> 
+		<script src="js/funcoes.js"></script> 
 	</head>
-<body>
-	<header>
-		<h1>Nome</h1>
-	</header>
+<body  ng-app="" ng-controller="mockyController">
+ 	<img src="{{thumb}}" width="80" height="80" alt="{{name}}">
+ 	<h1>{{name}}</h1>
+ 	<p>{{profession}}</p>
+</body>
 
-
-	<script src="javascripts/main.min.js"></script> 
+	
 </body>
 </html>

@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
       js : {
         files : {
-          'public/javascripts/main.min.js' : [ 'public/javascripts/main.js' ]
+          'js/main.min.js' : [ 'js/main.js' ]
         }
       }
     }, // uglify
@@ -20,7 +20,7 @@ module.exports = function( grunt ) {
       },
       target: {
         files: {
-          'public/stylesheets/style.min.css': ['public/stylesheets/style.css']
+          'stylesheets/style.min.css': ['stylesheets/style.css']
         }
       }
     }, //cssmin
@@ -31,7 +31,7 @@ module.exports = function( grunt ) {
           collapseWhitespace: true
         },
         files: {
-          'public/index_prod.html': 'public/index.html'
+          'index_prod.html': 'index.html'
         }
       }
     } //htmlmin
