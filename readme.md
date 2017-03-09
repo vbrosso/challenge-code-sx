@@ -31,9 +31,7 @@ Desconsiderar (não avaliar) os arquivos e diretorios minificados gerados pelos 
 1. ** index_prod.html**
 2. ** style.min.css**
 3. ** main.min.js**
-
-Algumas mudanças foram feitas:
-1. ** foi criado um json com o nome de mocky.json na raiz do projeto baseado na API fornecida, pois a thumb estava fora do ar :D**
+4. ** foi criado um json com o nome de mocky.json na raiz do projeto baseado na API fornecida, pois a thumb estava fora do ar :D**
 
 
 #*Obrigado!*#
