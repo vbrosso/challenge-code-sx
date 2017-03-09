@@ -11,16 +11,21 @@ $fundoEsquerdo: #49c5b1;
 	border-top-left-radius: $radius;
 	border-bottom-right-radius: $radius;
 }
-$break-small: 840px;
+$break-small: 1024px;
+$break-mobile: 580px;
 @mixin respond-to($media) {
   @if $media == handhelds {
     @media only screen and (max-width: $break-small) { @content; }
+  }
+  @if $media == mobile {
+    @media only screen and (max-width: $break-mobile) { @content; }
   }
 }
 
 body{
 	@include primary-font(400);
 	color: $texto-color;
+	overflow-x: hidden;
 }
 .secLeft{
 	background: $fundoEsquerdo;
@@ -59,7 +64,7 @@ body{
 		padding: 0px 0 0 0;
 		width: 518px;
 		float: right;
-		@include respond-to(handhelds) { width: 100% ; float: left;}
+		@include respond-to(handhelds) {float: left;width: calc(90% - 20px); padding-left: 20px;}
 		.icones{
 			background: #fff;
 			color: $fundoEsquerdo;
@@ -77,7 +82,8 @@ body{
 			font-weight: 300;
 			text-transform: uppercase;
 			padding: 60px 0 0 0;
-			margin: 0 0 20px 0;
+			margin: 0 0 45px 0;
+			@include respond-to(mobile) { font-size: 22px;}
 		}
 		p{
 			float: left;
@@ -94,10 +100,12 @@ body{
 				@include border-radius(0px);
 				float: left;
 				margin: 0 20px 0 0;
+				text-align: center;
 			}
 		}
 		#skills{
 			float: left;
+			@include respond-to(handhelds) { width: 100%;}
 			.titleSkill{
 				float: left;
 				width: 250px;
@@ -113,6 +121,7 @@ body{
 		  width: 225px;
 		  height: 18px;
 		  background: #fff;
+		  @include respond-to(mobile) { float: left; clear: both; margin: 0 10px 0 0;}
 		  #loadSkill{
 		  	background: #a6a5a5;
 		  	float: left;
@@ -137,7 +146,7 @@ body{
 		padding: 0 0 0 60px;
 		float: left;
 		margin: 80px 0 0 0;
-		@include respond-to(handhelds) { width: 100% ; float: left; clear: both;}
+		@include respond-to(handhelds) { width: 90% ; float: left; clear: both; padding: 0 0 0 20px}
 		.icones{
 			background: $fundoEsquerdo;
 			color: #fff;
@@ -147,6 +156,7 @@ body{
 			@include border-radius(8px);
 			float: left;
 			margin: 50px 20px 0 0;
+			text-align: center;
 		}
 		h2{
 			font-size: 32px;
@@ -156,6 +166,7 @@ body{
 			padding: 65px 0 0 0;
 			margin: 0 0 20px 0;
 			color: $fundoEsquerdo;
+			@include respond-to(mobile) { font-size: 22px;}
 		}
 		#educacao, #experiencia, #premios	{
 			float: left;
@@ -175,14 +186,16 @@ body{
 				text-align: center;
 				color: #636363;
 				margin: 0 0 0 -17px;
+				@include respond-to(mobile) { clear:none;margin:20px 0 0 0;}
 			}
 			h3{
-				float: right;
+				float: left;
 		    	color: #000100;
 		    	text-transform: uppercase;
 		    	font-size: 18px;
 		    	width: 353px;
 		    	margin: -22px 0 0 0;
+		    	@include respond-to(mobile) { clear:both;margin:10px 0 0 0;}
 			}
 			p{
 				float: left;
@@ -197,25 +210,28 @@ body{
 				clear: none;
 				float: right;
 				color: #7d7d7d;
+				@include respond-to(handhelds) { float: left; width:100%;}
 			}
 		}
 		#pskills{
 			float: left;
+			@include respond-to(handhelds) { width: 100%;}
 			.titleSkill{
 				float: left;
 				width: 182px;
 				text-transform: uppercase;
 				clear: both;
 				text-align: left;
-				margin: 10px 0 0 0;
+				margin: 25px 0 0 0;
 			}
 		}
 		#pbarStatus {
 		  float: right;
-		  margin: 10px 40px 0 0 ;
+		  margin: 30px 40px 0 0 ;
 		  width: 225px;
 		  height: 18px;
 		  background: #a6a5a5;
+		  @include respond-to(mobile) { float: left; clear: both; margin: 0 10px 0 0;}
 		  #ploadSkill{
 		  	background: #49c5b1;
 		  	float: left;

@@ -54,14 +54,15 @@ bold: 700,
 */
 /*VARIAVEIS*/
 /*MIXINS*/
-/* line 21, ../scss/core/layout.scss */
+/* line 25, ../scss/core/layout.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #000100;
+  overflow-x: hidden;
 }
 
-/* line 25, ../scss/core/layout.scss */
+/* line 30, ../scss/core/layout.scss */
 .secLeft {
   background: #49c5b1;
   color: #fff;
@@ -70,26 +71,26 @@ body {
   text-align: center;
   padding: 0 0 40px 0;
 }
-@media only screen and (max-width: 840px) {
-  /* line 25, ../scss/core/layout.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 30, ../scss/core/layout.scss */
   .secLeft {
     width: 100%;
   }
 }
-/* line 33, ../scss/core/layout.scss */
+/* line 38, ../scss/core/layout.scss */
 .secLeft header {
   padding: 89px 0 0 0;
   width: 518px;
   float: right;
 }
-@media only screen and (max-width: 840px) {
-  /* line 33, ../scss/core/layout.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 38, ../scss/core/layout.scss */
   .secLeft header {
     width: 100%;
     float: left;
   }
 }
-/* line 38, ../scss/core/layout.scss */
+/* line 43, ../scss/core/layout.scss */
 .secLeft header img.imgThumb {
   -webkit-border-top-left-radius: 22px;
   -webkit-border-bottom-right-radius: 22px;
@@ -100,14 +101,14 @@ body {
   width: 270px;
   height: 270px;
 }
-/* line 43, ../scss/core/layout.scss */
+/* line 48, ../scss/core/layout.scss */
 .secLeft header h1 {
   font-size: 45px;
   text-align: center;
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 49, ../scss/core/layout.scss */
+/* line 54, ../scss/core/layout.scss */
 .secLeft header p.profissao {
   font-size: 30px;
   text-align: center;
@@ -116,20 +117,21 @@ body {
   width: 100%;
   padding: 0;
 }
-/* line 58, ../scss/core/layout.scss */
+/* line 63, ../scss/core/layout.scss */
 .secLeft .content {
   padding: 0px 0 0 0;
   width: 518px;
   float: right;
 }
-@media only screen and (max-width: 840px) {
-  /* line 58, ../scss/core/layout.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 63, ../scss/core/layout.scss */
   .secLeft .content {
-    width: 100%;
     float: left;
+    width: calc(90% - 20px);
+    padding-left: 20px;
   }
 }
-/* line 63, ../scss/core/layout.scss */
+/* line 68, ../scss/core/layout.scss */
 .secLeft .content .icones {
   background: #fff;
   color: #49c5b1;
@@ -146,23 +148,29 @@ body {
   margin: 50px 20px 0 0;
   text-align: center;
 }
-/* line 74, ../scss/core/layout.scss */
+/* line 79, ../scss/core/layout.scss */
 .secLeft .content h2 {
   font-size: 32px;
   float: left;
   font-weight: 300;
   text-transform: uppercase;
   padding: 60px 0 0 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 45px 0;
 }
-/* line 82, ../scss/core/layout.scss */
+@media only screen and (max-width: 580px) {
+  /* line 79, ../scss/core/layout.scss */
+  .secLeft .content h2 {
+    font-size: 22px;
+  }
+}
+/* line 88, ../scss/core/layout.scss */
 .secLeft .content p {
   float: left;
   clear: both;
   padding: 10px 0 0 0;
   text-align: left;
 }
-/* line 87, ../scss/core/layout.scss */
+/* line 93, ../scss/core/layout.scss */
 .secLeft .content p .iconesContact {
   color: #fff;
   background: none;
@@ -178,12 +186,19 @@ body {
   border-bottom-right-radius: 0px;
   float: left;
   margin: 0 20px 0 0;
+  text-align: center;
 }
-/* line 99, ../scss/core/layout.scss */
+/* line 106, ../scss/core/layout.scss */
 .secLeft .content #skills {
   float: left;
 }
-/* line 101, ../scss/core/layout.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 106, ../scss/core/layout.scss */
+  .secLeft .content #skills {
+    width: 100%;
+  }
+}
+/* line 109, ../scss/core/layout.scss */
 .secLeft .content #skills .titleSkill {
   float: left;
   width: 250px;
@@ -192,7 +207,7 @@ body {
   text-align: left;
   margin: 10px 0 0 0;
 }
-/* line 110, ../scss/core/layout.scss */
+/* line 118, ../scss/core/layout.scss */
 .secLeft .content #barStatus {
   float: right;
   margin: 10px 40px 0 0;
@@ -200,48 +215,57 @@ body {
   height: 18px;
   background: #fff;
 }
-/* line 116, ../scss/core/layout.scss */
+@media only screen and (max-width: 580px) {
+  /* line 118, ../scss/core/layout.scss */
+  .secLeft .content #barStatus {
+    float: left;
+    clear: both;
+    margin: 0 10px 0 0;
+  }
+}
+/* line 125, ../scss/core/layout.scss */
 .secLeft .content #barStatus #loadSkill {
   background: #a6a5a5;
   float: left;
   width: 50%;
   height: 18px;
 }
-/* line 123, ../scss/core/layout.scss */
+/* line 132, ../scss/core/layout.scss */
 .secLeft .content .titleSkill {
   font-size: 18px;
 }
 
-/* line 128, ../scss/core/layout.scss */
+/* line 137, ../scss/core/layout.scss */
 .secRight {
   background: #fff;
   color: #000100;
   float: left;
   width: 50%;
-  padding: 0 0 10px 0;
+  padding: 0 0 20px 0;
 }
-@media only screen and (max-width: 840px) {
-  /* line 128, ../scss/core/layout.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 137, ../scss/core/layout.scss */
   .secRight {
     width: 100%;
   }
 }
-/* line 135, ../scss/core/layout.scss */
+/* line 144, ../scss/core/layout.scss */
 .secRight .content {
   width: 458px;
   padding: 0 0 0 60px;
   float: left;
   margin: 80px 0 0 0;
 }
-@media only screen and (max-width: 840px) {
-  /* line 135, ../scss/core/layout.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 144, ../scss/core/layout.scss */
   .secRight .content {
-    width: 100%;
+    width: 90%;
     float: left;
     clear: both;
+    padding: 0 0 0 20px;
   }
 }
-/* line 141, ../scss/core/layout.scss */
+/* line 150, ../scss/core/layout.scss */
 .secRight .content .icones {
   background: #49c5b1;
   color: #fff;
@@ -256,8 +280,9 @@ body {
   border-bottom-right-radius: 8px;
   float: left;
   margin: 50px 20px 0 0;
+  text-align: center;
 }
-/* line 151, ../scss/core/layout.scss */
+/* line 161, ../scss/core/layout.scss */
 .secRight .content h2 {
   font-size: 32px;
   float: left;
@@ -267,12 +292,18 @@ body {
   margin: 0 0 20px 0;
   color: #49c5b1;
 }
-/* line 160, ../scss/core/layout.scss */
+@media only screen and (max-width: 580px) {
+  /* line 161, ../scss/core/layout.scss */
+  .secRight .content h2 {
+    font-size: 22px;
+  }
+}
+/* line 171, ../scss/core/layout.scss */
 .secRight .content #educacao, .secRight .content #experiencia, .secRight .content #premios {
   float: left;
   clear: both;
 }
-/* line 163, ../scss/core/layout.scss */
+/* line 174, ../scss/core/layout.scss */
 .secRight .content #educacao span.mes, .secRight .content #experiencia span.mes, .secRight .content #premios span.mes {
   float: left;
   clear: both;
@@ -281,7 +312,7 @@ body {
   color: #636363;
   margin: 20px 0 0 -17px;
 }
-/* line 171, ../scss/core/layout.scss */
+/* line 182, ../scss/core/layout.scss */
 .secRight .content #educacao span.ano, .secRight .content #experiencia span.ano, .secRight .content #premios span.ano {
   float: left;
   clear: both;
@@ -290,54 +321,89 @@ body {
   color: #636363;
   margin: 0 0 0 -17px;
 }
-/* line 179, ../scss/core/layout.scss */
+@media only screen and (max-width: 580px) {
+  /* line 182, ../scss/core/layout.scss */
+  .secRight .content #educacao span.ano, .secRight .content #experiencia span.ano, .secRight .content #premios span.ano {
+    clear: none;
+    margin: 20px 0 0 0;
+  }
+}
+/* line 191, ../scss/core/layout.scss */
 .secRight .content #educacao h3, .secRight .content #experiencia h3, .secRight .content #premios h3 {
-  float: right;
+  float: left;
   color: #000100;
   text-transform: uppercase;
   font-size: 18px;
   width: 353px;
   margin: -22px 0 0 0;
 }
-/* line 187, ../scss/core/layout.scss */
+@media only screen and (max-width: 580px) {
+  /* line 191, ../scss/core/layout.scss */
+  .secRight .content #educacao h3, .secRight .content #experiencia h3, .secRight .content #premios h3 {
+    clear: both;
+    margin: 10px 0 0 0;
+  }
+}
+/* line 200, ../scss/core/layout.scss */
 .secRight .content #educacao p, .secRight .content #experiencia p, .secRight .content #premios p {
   float: left;
   clear: both;
 }
-/* line 191, ../scss/core/layout.scss */
+/* line 204, ../scss/core/layout.scss */
 .secRight .content #educacao p.universidade, .secRight .content #experiencia p.universidade, .secRight .content #premios p.universidade {
   width: 347px;
   clear: none;
 }
-/* line 195, ../scss/core/layout.scss */
+/* line 208, ../scss/core/layout.scss */
 .secRight .content #educacao p.descricao, .secRight .content #experiencia p.descricao, .secRight .content #premios p.descricao {
   width: 353px;
   clear: none;
   float: right;
   color: #7d7d7d;
 }
-/* line 202, ../scss/core/layout.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 208, ../scss/core/layout.scss */
+  .secRight .content #educacao p.descricao, .secRight .content #experiencia p.descricao, .secRight .content #premios p.descricao {
+    float: left;
+    width: 100%;
+  }
+}
+/* line 216, ../scss/core/layout.scss */
 .secRight .content #pskills {
   float: left;
 }
-/* line 204, ../scss/core/layout.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 216, ../scss/core/layout.scss */
+  .secRight .content #pskills {
+    width: 100%;
+  }
+}
+/* line 219, ../scss/core/layout.scss */
 .secRight .content #pskills .titleSkill {
   float: left;
   width: 182px;
   text-transform: uppercase;
   clear: both;
   text-align: left;
-  margin: 10px 0 0 0;
+  margin: 25px 0 0 0;
 }
-/* line 213, ../scss/core/layout.scss */
+/* line 228, ../scss/core/layout.scss */
 .secRight .content #pbarStatus {
   float: right;
-  margin: 10px 40px 0 0;
+  margin: 30px 40px 0 0;
   width: 225px;
   height: 18px;
   background: #a6a5a5;
 }
-/* line 219, ../scss/core/layout.scss */
+@media only screen and (max-width: 580px) {
+  /* line 228, ../scss/core/layout.scss */
+  .secRight .content #pbarStatus {
+    float: left;
+    clear: both;
+    margin: 0 10px 0 0;
+  }
+}
+/* line 235, ../scss/core/layout.scss */
 .secRight .content #pbarStatus #ploadSkill {
   background: #49c5b1;
   float: left;

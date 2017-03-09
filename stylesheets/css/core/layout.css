@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'primary-font'.
-        on line 22 of C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss, in `primary-font'
-        from line 22 of C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss
+        on line 26 of C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss, in `primary-font'
+        from line 26 of C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss
 
 Backtrace:
-C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss:22:in `primary-font'
-C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss:22
+C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss:26:in `primary-font'
+C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss:26
 C:/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:249:in `visit_mixin'
 org/jruby/RubyKernel.java:2096:in `send'
 C:/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
@@ -76,4 +76,4 @@ C:\Scout\bin\compass:12:in `(root)'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'primary-font'.\A         on line 22 of C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss, in `primary-font'\A         from line 22 of C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss"; }
+  content: "Syntax error: Undefined mixin 'primary-font'.\A         on line 26 of C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss, in `primary-font'\A         from line 26 of C:/wamp64/www/b2w/challenge-code-sx/stylesheets/scss/core/layout.scss"; }
