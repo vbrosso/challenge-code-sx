@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
       js : {
         files : {
-          'js/main.min.js' : [ 'js/main.js' ]
+          'js/funcoes.min.js' : [ 'js/funcoes.js' ]
         }
       }
     }, // uglify
@@ -20,7 +20,7 @@ module.exports = function( grunt ) {
       },
       target: {
         files: {
-          'stylesheets/style.min.css': ['stylesheets/style.css']
+          'stylesheets/css/general.min.css': ['stylesheets/css/general.css']
         }
       }
     }, //cssmin

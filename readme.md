@@ -1,3 +1,47 @@
+# Teste Front-end - B2W - Victor Brosso (vbrosso@gmail.com)
+
+## Tecnologias usadas
+
+
+### Pré-processador: SASS
+Arquivos scss: \stylesheets\scss
+
+Foi usado a IDE ScoutApp para converter automaticamente os arquivos *.scss em *.css
+
+
+## Precisando compilar os arquivos:
+Foi usado o npm para instalar as dependências, pelo nodejs.
+
+
+### Task manager: Grunt
+1. /Gruntfile.js
+2. /package.json
+3. Plugins usados: grunt-contrib-uglify, grunt-contrib-cssmin, grunt-contrib-htmlmin
+
+
+###Tarefas do Grunt: minifica o arquivos:
+1. index.html --> index_prod.html
+2. style.css --> style.min.css
+3. main.js --> main.min.js 
+
+
+## Observações do Build e considerações:
+Desconsiderar (não avaliar) os arquivos e diretorios minificados gerados pelos plugins do Grunt:
+
+1. ** index_prod.html**
+2. ** style.min.css**
+3. ** main.min.js**
+
+Algumas mudanças foram feitas:
+1. ** foi criado um json com o nome de mocky.json na raiz do projeto baseado na API fornecida, pois a thumb estava fora do ar :D**
+
+
+#*Obrigado!*#
+
+
+
+
+
 # Desafio Frontend BIT - SP
 
 Para o teste, pedimos que seja entrega em até 3 dias, mas de acordo com a experiência e/ou ferramentas escolhidas por você, talvez precise de mais tempo para concluir o desafio, nos avise!
