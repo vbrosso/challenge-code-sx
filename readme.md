@@ -21,8 +21,8 @@ Foi usado o npm para instalar as dependências, pelo nodejs.
 
 ###Tarefas do Grunt: minifica o arquivos:
 1. index.html --> index_prod.html
-2. style.css --> style.min.css
-3. main.js --> main.min.js 
+2. general.css --> general.min.css
+3. funcoes.js --> funcoes.min.js 
 
 
 ## Observações do Build e considerações:
